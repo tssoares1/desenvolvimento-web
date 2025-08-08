@@ -31,7 +31,7 @@
 
                     <label for="password">Your password (min 8 characters):</label>
                     <input type="password" name="password" id="password" placeholder="**************" required
-                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
+                       minlength="8" />
                 </div>
 
                 <div style="display: flex; flex-direction: column; gap: 5px; max-width: fit-content;">
@@ -52,11 +52,11 @@
 
                 <div style="display: flex; flex-direction: column; gap: 5px; max-width: fit-content;">
                     <label for="bio">Biography:</label>
-                    <textarea name="bio" id="bio" placeholder="Tell us about yourself"></textarea>
+                    <textarea name="bio" id="bio" rows="5" placeholder="Tell us about yourself"></textarea>
                 </div>
                 
                 <label>
-                    <input type="checkbox" name="terms" id="terms">
+                    <input type="checkbox" name="terms" id="terms" required>
                     I have read and accept the terms of service
                 </label>
             </fieldset>
