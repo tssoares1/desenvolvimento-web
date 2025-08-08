@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Programming Activity - Registration form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Creating a Registration Form</h1>
+        <nav>
+            <ul>
+                <li><a href="/primeirobi/atv1.html">HTML Semantic</a></li>
+                <li><a href="/primeirobi/atv2.html">Registration form</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="#" method="post" style="display: flex; flex-direction: column; gap: 5px;">
+            <fieldset style="display: flex; flex-direction: column; gap: 15px;">
+                <legend>Create your account</legend>
+
+                <div style="display: flex; flex-direction: column; gap: 5px; max-width: fit-content;">
+                    <label for="name">Your name:</label>
+                    <input type="text" name="name" id="name" placeholder="John Doe" required />
+
+                    <label for="mail">Your email:</label>
+                    <input type="email" name="mail" id="mail" placeholder="john.doe@acme.com" required />
+
+                    <label for="password">Your password (min 8 characters):</label>
+                    <input type="password" name="password" id="password" placeholder="**************" required
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 5px; max-width: fit-content;">
+                    <p style="font-weight: bold;">Gender:</p>
+                    <label for="female">
+                        <input type="radio" name="gender" id="female">
+                        Female
+                    </label>
+                    <label for="male">
+                        <input type="radio" name="gender" id="male">
+                        Male
+                    </label>
+                    <label for="other">
+                        <input type="radio" name="gender" id="other">
+                        Other
+                    </label>
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 5px; max-width: fit-content;">
+                    <label for="bio">Biography:</label>
+                    <textarea name="bio" id="bio" placeholder="Tell us about yourself"></textarea>
+                </div>
+                
+                <label>
+                    <input type="checkbox" name="terms" id="terms">
+                    I have read and accept the terms of service
+                </label>
+            </fieldset>
+            <div style="display: flex; flex-direction: row; gap: 5px; max-width: fit-content;">
+                <input type="submit" value="Register">
+                <input type="reset" value="Reset">
+            </div>
+
+        </form>
+
+        <footer>
+            <div>
+                <h4>More Info</h4>
+                <p>Email: tssoares1@minha.fag.edu.br | Phone: (11) 99999-9999</p>
+            </div>
+            <p>&copy; 2025 - Todos os direitos reservados.</p>
+        </footer>
+    </main>
+</body>
+
+</html>
