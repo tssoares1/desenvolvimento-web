@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Programming Activity - HTML Semantic</title>
+    <link rel="stylesheet" href="styles/atv3.css">
+</head>
+
+<body class="page">
+    <header class="header">
+        <h1 class="header__title">Example HTML Semantic</h1>
+        <nav class="nav nav--main">
+            <ul class="nav__list">
+                <li><a class="nav__link" href="#home">Home</a></li>
+                <li><a class="nav__link" href="#about">About</a></li>
+                <li><a class="nav__link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <article id="about" class="card">
+            <h2 class="card__title">How semantic html works?</h2>
+            <time class="card__date" datetime="2025-07-30">30 de julho de 2025</time>
+            <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem dolor, atque tempora, aspernatur
+                labore totam itaque ratione provident dolorem voluptatum eaque? Sint dolorum libero tenetur, iusto
+                inventore quaerat eum cum.</p>
+            <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur et, tempora maiores ea molestias vel
+                praesentium aliquam accusantium! Consequatur, alias odit praesentium delectus illum magni nisi tempora
+                quia et aut!</p>
+
+            <figure class="card__figure">
+                <img class="card__image" src="https://picsum.photos/200/300" alt="Image Example">
+                <figcaption class="card__caption">Lorem 1</figcaption>
+            </figure>
+        </article>
+        <aside class="aside">
+            <h3 class="aside__title">Other activities</h3>
+            <nav class="nav nav--aside">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="atv1.html">Activity one</a></li>
+                    <li><a class="nav__link" href="atv2.html">Activity two</a></li>
+                    <li><a class="nav__link" href="atv3.html">Activity three</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <footer id="contact" class="footer">
+            <div class="footer__info">
+                <h4 class="footer__subtitle">More Info</h4>
+                <p class="footer__contact">
+                    Email: tssoares1@minha.fag.edu.br | Phone: (11) 99999-9999
+                </p>
+            </div>
+            <p class="footer__copy">&copy; 2025 - Todos os direitos reservados.</p>
+        </footer>
+    </main>
+</body>
+
+</html>
