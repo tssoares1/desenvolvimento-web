@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.page {
+    background-color: #f9fdfb;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #111;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav__link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #111;
+    transition: color 0.3s ease;
+}
+
+.nav__link:hover {
+    color: #2a7cff;
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 60px 40px;
+}
+
+.services__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.services__subtitle {
+    color: #666;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.service-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.learn-more {
+    color: #6a11ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Reasons Section */
+.reasons {
+    background-color: #f3fff6;
+    padding: 60px 40px;
+}
+
+.reasons__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.reasons__image {
+    flex: 1;
+    max-width: 280px;
+    border-radius: 12px;
+}
+
+.reasons__text {
+    flex: 2;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.reasons__text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.reasons__text p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.reasons__list {
+  list-style: none;
+  font-weight: bold;
+  color: #333;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 20px; 
+  max-width: 400px;
+}
+
+.reasons__list li {
+    margin-bottom: 10px;
+}
