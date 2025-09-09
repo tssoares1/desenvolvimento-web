@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List - Suas Tarefas</title>
+    <link rel="stylesheet" href="./styles/atv6.css">
+    <script defer src="./atv6.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header__title">Your Todo List</h1>
+            <p class="header__subtitle">Organize suas tarefas de forma simples e eficiente</p>
+        </header>
+
+        <div class="card">
+            <div class="card__header">
+                <h2 class="card__title">Adicionar Nova Tarefa</h2>
+            </div>
+            <div class="card__body">
+                <form class="form" id="todo-form" method="post">
+                    <div class="form__group">
+                        <label class="form__label" for="task-input">Sua tarefa:</label>
+                        <input 
+                            class="form__input" 
+                            type="text" 
+                            name="task" 
+                            id="task-input" 
+                            placeholder="Ex: Estudar JavaScript"
+                            required
+                        />
+                    </div>
+                    
+                    <div class="form__actions">
+                        <button class="btn btn--primary" type="submit">
+                            Adicionar Tarefa
+                        </button>
+                        <button class="btn btn--secondary" type="reset">
+                            Limpar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Lista de tarefas -->
+        <div class="todo-list">
+            <div class="todo-list__header">
+                <h2 class="todo-list__title">Suas Tarefas</h2>
+                <span class="todo-list__count" id="visible-count">0</span>
+            </div>
+            <div class="todo-list__body">
+                <!-- Lista vazia (será escondida quando houver tarefas) -->
+                <div class="todo-list__empty" id="empty-state">
+                    <div class="todo-list__empty-icon">📝</div>
+                    <div class="todo-list__empty-text">Nenhuma tarefa ainda</div>
+                    <div class="todo-list__empty-subtext">Adicione sua primeira tarefa usando o formulário acima</div>
+                </div>
+
+                <div id="todo-items-container"></div>
+            </div>
+        </div>
+    </div>
+
+     <template id="todo-item-template">
+        <div class="todo-item" data-id="">
+            <div class="todo-item__checkbox" data-action="toggle"></div>
+            <div class="todo-item__content">
+                <div class="todo-item__text">Estudar Javascript</div>
+                <div class="todo-item__date">01/01/2025, 21:45:00</div>
+            </div>
+            <div class="todo-item__actions">
+                <button class="btn btn--small btn--danger" data-action="delete">
+                    🗑️ Excluir
+                </button>
+            </div>
+        </div>
+    </template>
+</body>
+
+</html>
